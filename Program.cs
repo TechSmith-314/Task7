@@ -9,15 +9,12 @@ namespace Task7
             int userGold;
             int userCrystal;
             int crystalPrice = 75;
-            string userInput;
 
             Console.WriteLine("Сколько у Вас монет?");
-            userInput = Console.ReadLine();
-            userGold = Int32.Parse(userInput);
+            userGold = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine($"На данный момент кристалы стоят {crystalPrice} монет. Сколько желаете приобрести?");
-            userInput = Console.ReadLine();
-            userCrystal = Int32.Parse(userInput);
+            userCrystal = Int32.Parse(Console.ReadLine());
             userGold = userGold - (userCrystal * crystalPrice);
             Console.WriteLine($"Отлично! Теперь у Вас есть {userCrystal} кристалов и осталось {userGold} монет");
         }
