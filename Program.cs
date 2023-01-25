@@ -15,7 +15,7 @@ namespace Task7
 
             Console.WriteLine($"На данный момент кристалы стоят {crystalPrice} монет. Сколько желаете приобрести?");
             userCrystal = Int32.Parse(Console.ReadLine());
-            userGold = userGold - (userCrystal * crystalPrice);
+            userGold -= userCrystal * crystalPrice;
             Console.WriteLine($"Отлично! Теперь у Вас есть {userCrystal} кристалов и осталось {userGold} монет");
         }
     }
