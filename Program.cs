@@ -6,17 +6,17 @@ namespace Task7
     {
         static void Main(string[] args)
         {
-            int userGold;
-            int userCrystal;
+            int userGolds;
+            int userCrystals;
             int crystalPrice = 75;
 
             Console.WriteLine("Сколько у Вас монет?");
-            userGold = Int32.Parse(Console.ReadLine());
+            userGolds = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine($"На данный момент кристалы стоят {crystalPrice} монет. Сколько желаете приобрести?");
-            userCrystal = Int32.Parse(Console.ReadLine());
-            userGold -= userCrystal * crystalPrice;
-            Console.WriteLine($"Отлично! Теперь у Вас есть {userCrystal} кристалов и осталось {userGold} монет");
+            userCrystals = Int32.Parse(Console.ReadLine());
+            userGolds -= userCrystals * crystalPrice;
+            Console.WriteLine($"Отлично! Теперь у Вас есть {userCrystals} кристалов и осталось {userGolds} монет");
         }
     }
 }
